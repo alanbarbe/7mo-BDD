@@ -1,0 +1,34 @@
+a) Crear una tabla llamada MARCAS con las siguientes columnas:
+   - IdMarca: tipo SMALLINT, no nulo, valor por defecto 1, clave primaria.
+   - NombreMarca: tipo CHAR(10), no nulo.
+   - NombreCiudad: tipo CHAR(60), no nulo.
+
+b) Crear una tabla llamada COCHES con las siguientes columnas:
+   - codcoche: tipo SMALLINT, no nulo, clave primaria.
+   - nombre: tipo CHAR(15), no nulo.
+   - modelo: tipo CHAR(10).
+
+c) Crear una tabla llamada MARCO con las siguientes columnas:
+   - IdMarca: tipo SMALLINT, no nulo.
+   - codcoche: tipo SMALLINT, no nulo.
+   - Establecer una clave primaria compuesta por IdMarca y codcoche.
+   - Establecer IdMarca como clave foránea que referencia a IdMarca en la tabla MARCAS.
+   - Establecer codcoche como clave foránea que referencia a codcoche en la tabla COCHES.
+
+d) Insertar los siguientes registros en la tabla MARCAS:
+   - (1, 'vw', 'Mar del Plata')
+   - (2, 'renault', 'Rosario')
+   - (3, 'fiat', 'Cordoba')
+   - (4, 'ford', 'Neuquen')
+
+e) Seleccionar todos los registros de la tabla MARCAS.
+
+f) Seleccionar las columnas NombreMarca y NombreCiudad de la tabla MARCAS.
+
+g) Seleccionar las columnas NombreMarca y NombreCiudad de la tabla MARCAS donde IdMarca sea igual a 2.
+
+h) Seleccionar las columnas NombreMarca y NombreCiudad de la tabla MARCAS donde NombreCiudad sea igual a 'Neuquen'.
+
+i) Seleccionar las columnas NombreMarca y NombreCiudad de la tabla MARCAS donde NombreCiudad comience con 'S'.
+
+j) Actualizar la columna NombreCiudad a 'Neuquen' en la tabla MARCAS donde NombreCiudad sea igual a 'Jujuy'.
